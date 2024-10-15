@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript String Methods</h2>
+
+    <p>
+      Search a string for "doing", and display the position of the match and replace the word "how are" by "how are you"
+      and display
+    </p>
+
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+
+    <script>
+      let str = "Hello, how are doing today?";
+      let search_position = str.search("doing");
+      let txt = str.replace("how are", "how are you");
+      document.getElementById("search_result").innerHTML = search_position;
+      document.getElementById("replace_result").innerHTML = txt;
+    </script>
+  </body>
+</html>
