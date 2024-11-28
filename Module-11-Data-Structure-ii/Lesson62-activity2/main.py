@@ -1,12 +1,11 @@
-number = int(input("Input number:"))
-s = 0
-temp = number
-
-while temp!=0:
-  digit = temp%10
-  s = s+digit**3
-  temp = temp//10
-if number == s:
-  print(number, "is an armstrong number ")
-else:
-  print(number, "is not an armstrong number ")
+def setOrNot(number, n):
+  # You need to define 'mask' before using it
+  mask = 1  # Assuming you want to check if the bit is set or not 
+  if (n & mask) == 1 or (n & mask) == 0:  # Corrected comparison and OR operator
+    if number & (1 << (n - 1)):
+      print("SET")
+    else:
+      print("NOT SET")
+number = int(input("Enter the number: "))
+n = int(input("Enter the bit position: "))
+setOrNot(number, n)

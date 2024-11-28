@@ -1,8 +1,14 @@
-numberLargest = int(input("Enter the largest number: "))
-numberSmallest = int(input("Enter the smallest number: "))
-while numberSmallest:
-    numberStore = numberSmallest
-    numberSmallest = numberLargest % numberSmallest
-    numberLargest = numberStore
+def OddOccuring(arr):
+  res = 0
+  for element in arr:
+    res = res ^ element
+  return res
 
-print("HCF is: ", numberLargest)
+arr = []
+n = int(input("Enter array size: "))
+while(n):
+  num = int(input("Enter number: "))
+  arr.append(num)
+  n-=1
+
+print("OddOccuring number is ",OddOccuring(arr))

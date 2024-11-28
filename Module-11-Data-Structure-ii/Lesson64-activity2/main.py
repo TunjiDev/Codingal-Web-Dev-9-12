@@ -1,19 +1,16 @@
-def primeSeive(n):
-    prime = [True for i in range(n + 1)]
-    currentNumber = 2
-    while (currentNumber * currentNumber <= n):
-        if (prime[currentNumber] == True):
-            for i in range(currentNumber ** 2, n + 1, currentNumber):
-                prime[i] = False
-        currentNumber += 1
-    prime[0]= False
-    prime[1]= False
-    for p in range(n + 1):
-        if prime[p]:
-            print(p)
+def power4(number):
+   count = 0
+   if (number & (~(number & (number - 1)))):
+        while(number > 1):
+            number >>= 1
+            count += 1
 
-
-n = int(input("Enter number to find all prime numbers less than the number : "))
-primeSeive(n)
-print ("Following are the prime numbers smaller.")
-print ("than or equal to")
+        if(count % 2 == 0):
+            return True
+        else:
+            return False
+number = int(input("Enter a number: "))
+if power4(number):
+    print( number, "is a power of 4")
+else:
+    print( number, "is not a power of 4")
