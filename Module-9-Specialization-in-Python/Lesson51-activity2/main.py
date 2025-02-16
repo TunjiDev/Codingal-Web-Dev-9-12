@@ -16,7 +16,7 @@ my_file.write("Hi! I am Penguin and I am 1 yr old.")
 my_file.close()
 
 #delete file named codingal
-os.remove('Codingal.txt')
+os.remove('Lesson51-activity2\Codingal.txt')
 
 #delete the folder
 os.rmdir('Folder')
