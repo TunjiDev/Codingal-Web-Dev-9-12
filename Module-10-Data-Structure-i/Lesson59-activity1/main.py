@@ -1,6 +1,5 @@
 # Program to check if the given number is a palindrome 
 
-
 # Take input from the user
 number = int(input("Enter your Number : "))
 
@@ -19,7 +18,6 @@ while(number>0):
 
 # Print reversed number
 print("\nReversed number : ",reverse)
-
 
 # Check if palindrome or not
 if(store==reverse):
