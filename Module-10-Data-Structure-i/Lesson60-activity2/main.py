@@ -13,7 +13,7 @@ def primeSeive(n):
             print(p)
 
 
-n = int(input("Enter number to find all prime numbers less than the number : "))
+n = int(input("Enter number to find all prime numbers less than the number: "))
 primeSeive(n)
 print ("Following are the prime numbers smaller.")
 print ("than or equal to")
