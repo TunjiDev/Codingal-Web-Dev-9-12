@@ -11,4 +11,4 @@ while(n):
   arr.append(num)
   n-=1
 
-print("OddOccuring number is ",OddOccuring(arr))
+print("OddOccuring number is", OddOccuring(arr))
