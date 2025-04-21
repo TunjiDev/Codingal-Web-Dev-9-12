@@ -16,6 +16,8 @@ INSERT INTO PRODUCTS (PRODUCT_ID, PRODUCT_NAME, SUPPLIER_ID, CATEGORY_ID, UNIT, 
   ('4', 'CHEF ANTON SEASONING', '2', '2', '48- 6 OZ JARS', 22),
   ('5', 'CHEF ANTON MIX', '2', '2', '36 BOXES', 21.35);
 
+-- Query to select all products
+SELECT * FROM PRODUCTS;
 -- Query to count the number of products
 SELECT COUNT(PRODUCT_ID) AS Product_Count
 FROM PRODUCTS;
