@@ -17,3 +17,4 @@ while True:
     t.width(x/100 + 7)
     t.forward(x) 
     t.right(59) 
+t.done()
