@@ -5,5 +5,5 @@ def numberOfBits(n):
         n >>= 1
     return count
 
-n = int(input("Enter a number: "))
-print("Number of bits: ", numberOfBits(n))
+number = int(input("Enter a number: "))
+print("Number of bits: ", numberOfBits(number))
