@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
- href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        position: relative;
+      }
+      p {
+        font-size: 18px;
+      }
+      #section1 {
+        padding-top: 50px;
+        height: 500px;
+        color: white;
+        background-color: orange;
+      }
+      #section2 {
+        padding-top: 50px;
+        height: 500px;
+        color: green;
+        background-color: white;
+      }
+      #section3,
+      #section41,
+      #section42 {
+        padding-top: 50px;
+        height: 500px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">Section 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Section 3</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Section 4 </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Link 1</a>
+            <a class="dropdown-item" href="#section42">Link 2</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-   </script>
-  <style>
-  body {
-      position: relative;
-  }
-  p {
-      font-size: 18px;
-  }
-  #section1 {padding-top:50px;height:500px;color: white; background-color: orange;}
-  #section2 {padding-top:50px;height:500px;color: green; background-color: white;}
-  </style>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
- 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle"
-data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                       
-      </button>
-      <a class="navbar-brand" href="#">Codingal</a>
+    <div id="section1" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px">
+      <h1>Section 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">Section 1</a></li>
-          <li><a href="#section2">Section 2</a></li>
-        </ul>
-      </div>
+    <div id="section2" class="container-fluid bg-warning" style="padding-top: 70px; padding-bottom: 70px">
+      <h1>Section 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     </div>
-  </div>
-</nav>   
- 
-<div id="section1" class="container-fluid">
-  <h1>Section 1</h1>
-<h3>Codingal</h3>
-<h5>Codingal is on a mission to inspire school kids to fall in love with coding. Coding is proven to develop creativity, logical thinking and problem solving skills in kids. Coding is an essential skill of the future and more than 60% of all jobs in STEM-related fields require knowledge of code. Kids who start learning to code at a young age are guaranteed to become leaders, creators and entrepreneurs of the future.</h6>
-         
-<p>Scroll this section.</p>
- 
-</div>
-<div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-<h3>Codingal</h3>
-<h5>Vivek Prakash and Satyam Baranwal are the founders of Codingal.</h6>
- 
-<p>Scroll this section.</p>
-
-</div>
- 
-</body>
+    <div id="section3" class="container-fluid bg-secondary" style="padding-top: 70px; padding-bottom: 70px">
+      <h1>Section 3</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section41" class="container-fluid bg-danger" style="padding-top: 70px; padding-bottom: 70px">
+      <h1>Section 4 Submenu 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section42" class="container-fluid bg-info" style="padding-top: 70px; padding-bottom: 70px">
+      <h1>Section 4 Submenu 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+  </body>
 </html>

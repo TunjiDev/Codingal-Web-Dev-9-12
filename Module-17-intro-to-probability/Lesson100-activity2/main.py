@@ -8,4 +8,4 @@ prob_pos_given_st = 0.85
 
 prob_result = (prob_st*prob_pos_given_st)/prob_positive
 
-print("Probability of person testing positive having step throat is :", round((prob_result),3))
+print("Probability of person testing positive having strep throat is :", round((prob_result),3))
