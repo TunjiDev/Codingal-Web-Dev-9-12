@@ -1,0 +1,71 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: #4a4e69;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Style the file upload button */
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+#image-container {
+  margin: 20px auto;
+  border: 4px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure the user image fits perfectly inside the container */
+#user-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#label-container {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.prediction-line {
+  background-color: #f1f5f9;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
